@@ -20,16 +20,54 @@
 <header class="header">
 
   <section class="flex">
-    <a href="#" class="logo">educa.</a>
 
+    <div class="logo">
+      <img src="imagenes/logo-sitio-fisei-2020.png" alt="">
+    </div>
+
+    <div class="menu">
     <nav class="navbar">
-      <a href="#home">Home</a>
-      <a href="#about">about</a>
-      <a href="#course">course</a>
-      <a href="#teachers">teachers</a>
-      <a href="#reviews">reviews</a>
-      <a href="#contact">contact</a>
+        <ul>
+          <li class="dropdown">
+            <a href="#capOne">Unidad 1</a>
+            <div class="dropdown-content">
+              <a href="#MathSignal">Representaciones matemáticas de señales</a>
+              <a href="#Fourier">Series de Fourier y transformada de Fourier</a>
+              <a href="#Espectro">Densidad Espectral de Potencia </a>
+              <a href="#AutoCo">Autocorrelación de señales</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#capOne">Unidad 2</a>
+            <div class="dropdown-content">
+              <a href="#MathSignal">Teoría de la información</a>
+              <a href="#Fourier">Fuentes Discretas</a>
+              <a href="#Espectro">Codificación de las fuentes discretas sin memoria FDSM</a>
+              <a href="#AutoCo">Códigos de Línea</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#capOne">Unidad 3</a>
+            <div class="dropdown-content">
+              <a href="#MathSignal">Generalidades de los sistemas de Comunicaciones</a>
+              <a href="#Fourier">ASK (Modulación por desplazamiento de amplitud), FSK (Modulación por desplazamiento de frecuencia)</a>
+              <a href="#Espectro">PSK (Modulación por desplazamiento de fase)</a>
+              <a href="#AutoCo">QAM (Modulación de amplitud en cuadratura)</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#capOne">Unidad 4</a>
+            <div class="dropdown-content">
+              <a href="#MathSignal">Técnicas de muestreo</a>
+              <a href="#Fourier">Modulaciones analógicas de pulsos</a>
+              <a href="#Espectro">Técnicas de multiplexación y acceso múltiple</a>
+              <a href="#AutoCo">Códigos de bloque y técnicas de recuperación frente a errores</a>
+            </div>
+          </li>
+        </ul>
     </nav>
+
+  </div>
 
     <div id="menu-btn" class="fas fa-bars"></div>
 
@@ -45,12 +83,12 @@
 <section class="home" id="home">
   <div class="row">
     <div class="content">
-      <h3>online <span>education</span></h3>
+      <h3>Bienvenidos al Curso de  <span>Digitales</span></h3>
       <a href="files/Ape9.docx" target="_blank"><button class="btn">Descarga Word</button></a>
     </div>
 
     <div class="image">
-      <img src="imagenes/" alt="">
+      <img src="imagenes/DT_G65_Electronic-Animated-GIF-Icon-Pack-2.webp" alt="">
     </div>
 
 
@@ -66,44 +104,655 @@
 
     <div class="box">
       <i class="fas fa-graduation-cap"></i>
-     <div class="content">
-      <h3>150+</h3>
-      <p>courses</p>
-     </div>
     </div>
   
     <div class="box">
       <i class="fas fa-user-graduate"></i>
-     <div class="content">
-      <h3>1300+</h3>
-      <p>students</p>
-     </div>
     </div>
   
     <div class="box">
       <i class="fas fa-chalkboard-user"></i>
-     <div class="content">
-      <h3>80+</h3>
-      <p>teacher</p>
-     </div>
     </div>
   
      <div class="box">
       <i class="fas fa-face-smile"></i>
-     <div class="content">
-      <h3>100%</h3>
-      <p>satisfaction</p>
-     </div>
     </div>
-  
-  
-
   </div>
 </div>
 
 </section>
 
 <!-- counter section end -->
+
+<!-- Section One Capitulo Uno -->
+
+<section class="section" id="capOne">
+  <div class="container" id="home">
+    <h2 id="MathSignal">Unidad 1: Representaciones matemáticas de señales</h2>
+    <div class="content">
+      <div class="text-container">
+        <h2>Introducción a los sistemas de comunicación</h2>
+        <p>
+        Los sistemas de comunicación tuvieron sus inicios a finales del siglo XIX con la introducción de la telegrafía,
+        que representó un sistema de comunicación digital. A medida que evolucionaba la
+        tecnología, surgieron la telefonía, la radio y la televisión, estableciendo sistemas de telecomunicaciones dominados 
+        por enfoques analógicos hasta los años sesenta y setenta del siglo XX. A partir de esta época, el progreso tecnológico ha llevado al desarrollo de dispositivos
+        con capacidades mejoradas de almacenamiento en espacios reducidos, mayor capacidad de cálculo en operaciones de coma flotante realizadas en tiempos más cortos, técnicas avanzadas de procesamiento de señales para comprimir información y contrarrestar interferencias durante 
+        la transmisión, y eficiencias energéticas mejoradas. Estas características han propiciado la aparición de sistemas de comunicación basados en modulaciones digitales, transformando por completo las comunicaciones existentes y dando origen a una amplia variedad de nuevos sistemas.
+      </p>
+      <p>En el diseño de sistemas de comunicación, la elección del canal o medio físico de transmisión es
+        crucial. Ya sea a través de cables convencionales, fibras ópticas o enlaces aéreos, este factor
+        impacta directamente en la configuración de los bloques del sistema. La transmisión por cable
+        tiende a tener menores efectos de interferencias y ruido en comparación con las redes de
+        radioenlaces terrenas. Por ejemplo, en las comunicaciones vía satélite, la señal debe recorrer
+        distancias significativas sin amplificación, lo que puede resultar en atenuación y exposición a
+        diversos tipos de interferencias. El diseño de un sistema de comunicaciones debe considerar
+        estas condiciones, determinando el tipo de modulaciones y procesamiento necesarios para
+        proteger la señal de posibles distorsiones y ruido del medio. En resumen, la adaptación de la
+        señal al medio es esencial, ya sea a través de ondas electromagnéticas en medios aéreos o
+        mediante la transmisión de diferencias de tensión en cables, definiendo así la clasificación inicial
+        de los sistemas de comunicación según el medio utilizado. [1]</p>
+        <h2>Transmisor, Canal y Receptor</h2>
+        <p>En términos generales, un sistema de comunicaciones se define como el mecanismo para
+          transmitir información de una fuente a un destinatario a cierta distancia. El mensaje,
+          manifestado físicamente por la fuente, tiene como objetivo que el destinatario reproduzca una
+          réplica lo más fiel posible al original</p>
+        <p>Las fuentes de información se clasifican en aquellas que generan mensajes analógicos y digitales.
+          Un mensaje analógico es una cantidad física que varía de manera continua en el tiempo, como
+          la presión acústica de una señal de audio o la luminosidad en una imagen de televisión. Por otro
+          lado, un mensaje digital consiste en una secuencia ordenada de símbolos seleccionados de un
+          conjunto finito, como las letras impresas de una página o un conjunto de contraseñas bancarias</p>
+        <p>En resumen, la distinción entre mensajes analógicos y digitales radica en la naturaleza continua
+          o discreta de la información que transmiten, respectivamente. [1]</p>
+        <div class="image-container">
+          <img src="./media/capOne/FibraOptica1.jpg" alt="Imagen del Capítulo 1">
+        </div>
+        <p><strong>El transmisor:</strong> realiza el procesamiento de la señal generada por la fuente de información y emite
+          la señal adecuada al canal de transmisión. Este componente está compuesto por diversos
+          subsistemas, destacándose entre ellos las etapas de codificación y modulación</p>
+        <p><strong>El canal de transmisión: </strong> constituye el medio eléctrico que abarca la distancia entre el transmisor
+          y el receptor, pudiendo ser conformado por un cable, una fibra óptica o el espacio radioeléctrico
+          (onda electromagnética). Una característica intrínseca a los canales de comunicación es que la
+          señal transmitida experimenta degradación al propagarse por el medio. A medida que la
+          distancia física entre el transmisor y el receptor aumenta, la señal enfrenta una mayor
+          atenuación.</p>
+        <p><strong>El receptor: </strong> actúa sobre la señal que emerge del canal de comunicaciones, cumpliendo una doble
+          función. Por un lado, se encarga de mitigar en la medida de lo posible los efectos generados por
+          el canal. Por otro lado, debe ajustar la señal recibida al destinatario mediante la realización de
+          las operaciones inversas al transmisor, lo que implica incluir etapas de decodificación y
+          demodulación. [1]</p>
+        <div class="image-container">
+            <img src="./media/capOne/Historia.png" alt="Imagen del Capítulo 1">
+         </div>
+        <h2>Fuentes de Información</h2>
+        <p>En un sistema de comunicación, las fuentes de información son los elementos o dispositivos que
+          generan la información que se va a transmitir. Estas fuentes pueden ser diversas y abarcar una
+          amplia gama de contenidos. Algunos ejemplos comunes de fuentes de información incluyen</p>
+
+        <h2>1. Fuentes de Información Analógicas:</h2>
+        <ul class="ul-item">
+          <li>Señales de audio: Sonidos y voces</li>
+          <li>Señales de video: Imágenes en movimiento.</li>
+          <li>- Datos ambientales: Temperatura, presión, luminosidad, etc</li>
+        </ul>
+        <div class="image-container">
+          <img src="./media/capOne/DiagramaMedios.png" alt="Imagen del Capítulo 1">
+        </div>
+        <h2>2. Fuentes de Información Digitales</h2>
+        <ul class="ul-item">
+         <li>Texto: Documentos escritos, mensajes de texto</li>
+         <li>Datos numéricos: Números, valores medidos, estadísticas</li>
+         <li>Multimedia digital: Imágenes, videos, música en formato digital.</li>
+        </ul>
+        <div class="image-container">
+          <img src="./media/capOne/Espectro.png" alt="Imagen del Capítulo 1">
+        </div>
+        <p>
+          Las fuentes de información pueden clasificarse en analógicas o digitales dependiendo de la
+          naturaleza de la información que generan. Las señales analógicas son continuas y varían
+          suavemente con el tiempo, como las ondas de sonido. Por otro lado, las señales digitales son
+          discretas y representan información de manera digitalizada mediante símbolos discretos, como
+          en el caso de los datos almacenados en formato binario. [2]
+        </p>
+        <p>En resumen, las fuentes de información son el punto de origen de los mensajes que se
+          transmiten a través de un sistema de comunicación, y su naturaleza determina cómo se
+          procesarán y transmitirán dichos mensajes a lo largo del sistema. [2]</p>
+        <h2>Canal de Comunicaciones</h2>
+        <p>Los medios de transmisión se pueden clasificar en dos categorías principales: medios de
+          transmisión guiados y no guiados (inalámbricos o medios de transmisión aéreos). En términos
+          generales, los medios guiados proporcionan una mayor protección de la señal. Sin embargo,
+          presentan desafíos como la necesidad de instalar infraestructuras para cubrir a los diversos
+          usuarios y su limitación en el uso cuando tanto el emisor como el receptor son móviles. [1]</p>
+      </div>
+      <h2>Medios de transmisión Guiados</h2>
+      <p>Los medios guiados son aquellos canales físicos que proporcionan un camino definido para la
+        transmisión de señales. Estos medios de transmisión permiten el flujo de información a lo largo
+        de una ruta específica. Algunos ejemplos comunes de medios guiados incluyen</p>
+      <p><strong>1. Par Trenzado:</strong> Consiste en dos cables conductores aislados entrelazados entre sí. Se utiliza
+        comúnmente en redes telefónicas y de datos.</p>
+      <div class="image-container">
+        <img src="./media/capOne/caracteristicasPrincipales.png" alt="Imagen del Capítulo 1">
+      </div>
+      <p><strong>2. Cable Coaxial:</strong> Consta de un conductor central rodeado por una capa aislante y una malla
+        conductora externa. Se utiliza para transmitir señales de televisión por cable, servicios de
+        Internet y algunas redes de datos.</p>
+      <div class="image-container">
+        <img src="./media/capOne/ventanasOperacion.png" alt="Imagen del Capítulo 1">
+      </div>
+      <p><strong>3. Fibra Óptica:</strong> Utiliza hilos delgados de vidrio o plástico para transmitir información en forma
+        de pulsos de luz. Es empleado en redes de alta velocidad y comunicaciones de larga distancia
+        debido a su capacidad para transmitir grandes cantidades de datos a velocidades elevadas.</p>
+      <div class="image-container">
+        <img src="./media/capOne/ventanasOP.png" alt="Imagen del Capítulo 1">
+      </div>
+      <p>Estos medios guiados ofrecen mayor protección y control sobre la señal en comparación con los
+        medios inalámbricos. Sin embargo, su despliegue y uso pueden estar limitados por factores
+        como la instalación de infraestructuras físicas y la movilidad de los dispositivos de transmisión y
+        recepción. [3]</p>
+      <h2>Medios de transmisión No Guiados</h2>
+      <p>Los medios no guiados, también conocidos como medios inalámbricos o no guiados, son canales
+        de comunicación que no requieren un camino físico definido para la transmisión de señales. En
+        lugar de utilizar cables o conductores, estos medios se basan en la propagación de ondas
+        electromagnéticas o señales de radio para la transmisión de datos. Algunos ejemplos comunes
+        de medios no guiados incluyen:</p>
+      
+      <p><strong>1. Comunicación por Radio:</strong> Utiliza ondas de radio para la transmisión de señales. Incluye
+      tecnologías como la radio FM/AM y las comunicaciones por radio móvil</p>
+      <p><strong>2. Comunicación por Microondas</strong> Se basa en la transmisión de señales mediante ondas de
+      microondas, utilizadas en enlaces punto a punto y en comunicaciones satelitales</p>
+      <p><strong>3. Comunicación por Infrarrojos:</strong> Emplea señales de luz infrarroja para la transmisión de datos
+      en distancias cortas, comúnmente utilizada en dispositivos de control remoto</p>
+      <p><strong>4. Comunicación por Ondas de Luz Visible (Li-Fi):</strong> Utiliza luz visible para transmitir datos de
+      manera inalámbrica, aprovechando la velocidad y capacidad de las tecnologías de iluminación
+      LED</p>
+      <div class="image-container">
+        <img src="./media/capOne/comparacionTX.png" alt="Imagen del Capítulo 1">
+      </div>
+      
+      <p>Los medios no guiados son flexibles y permiten la movilidad de dispositivos, pero pueden estar
+        más expuestos a interferencias y obstáculos que afectan la calidad de la señal en comparación
+        con los medios guiados. Este tipo de medios es esencial en aplicaciones como redes
+        inalámbricas, comunicaciones móviles y tecnologías de transmisión de datos sin cables. [3]</p>
+
+      <h2>Degradación de la Señal</h2>
+      <p>La degradación de una señal se refiere a la pérdida o deterioro de la calidad de la señal original
+        durante su transmisión a través de un medio de comunicación. Esta pérdida puede deberse a
+        diversas razones y factores que afectan la fidelidad de la señal, y puede manifestarse de varias
+        maneras. Algunas de las causas comunes de la degradación de señal incluyen</p>
+
+      <p><strong>Atenuación:</strong> Es la disminución de la intensidad de la señal a medida que se propaga a través del
+        medio de transmisión. Cuanto mayor es la distancia recorrida, mayor puede ser la atenuación.</p>
+      <p><strong>Interferencias:</strong> Son señales no deseadas que se mezclan con la señal original, provocando
+        distorsiones. Pueden ser causadas por otros dispositivos electrónicos, ruido electromagnético,
+        o interferencias de otras señales cercanas.</p>
+      <p><strong>Ruido:</strong> Son variaciones aleatorias en la señal que pueden ser causadas por factores externos,
+        como interferencias eléctricas o térmicas. El ruido puede introducir errores y afectar la calidad
+        de la información transmitida</p>
+      <p><strong>Dispersión: </strong> Se refiere a la separación temporal de los componentes de la señal, lo que puede
+        causar distorsiones en la forma de onda y afectar la integridad de la información.</p>
+      <p>La degradación de la señal es un desafío común en los sistemas de comunicación, y los ingenieros
+        trabajan en el diseño de sistemas y en el uso de técnicas para minimizar estos efectos y mejorar
+        la calidad de la transmisión. Amplificadores, ecualizadores y técnicas de corrección de errores
+        son algunos de los dispositivos y métodos utilizados para mitigar la degradación de la señal en
+        diversos contextos de comunicación. [1]</p>
+
+      <h2>Modulador (Transmisor) y Demodulador (Receptor)</h2>
+      <p>El modulador y el demodulador son componentes clave en un sistema de comunicación que se
+        encargan de la modulación y la demodulación de la señal, respectivamente</p>
+      <h2>Modulador (Transmisor):</h2>
+      <p>El modulador es responsable de modificar una señal de entrada (llamada señal base o
+        moduladora) para que pueda ser transmitida eficientemente a través de un medio de
+        transmisión. La señal modulada resultante lleva la información de la señal de entrada, pero
+        ahora está adaptada para ser transmitida de manera más efectiva.</p>
+      <p>Durante la modulación, la información de la señal base se combina con una portadora de
+        frecuencia más alta. Los tipos comunes de modulación incluyen la modulación de amplitud (AM),
+        la modulación de frecuencia (FM) y la modulación de fase (PM), cada una con sus propias
+        características y aplicaciones. [1]</p>
+      <h2>Demodulador (Receptor):</h2>
+      <p>El demodulador realiza el proceso inverso al modulador. Recibe la señal modulada transmitida
+        y extrae la información original de la señal moduladora. Su tarea es recuperar la señal base,
+        eliminando la portadora y cualquier otra modificación realizada durante la transmisión</p>
+      <p>Dependiendo del tipo de modulación utilizada, el demodulador realiza operaciones específicas
+        para extraer la información original. Por ejemplo, un demodulador de AM recuperará la
+        información de amplitud, mientras que uno de FM se centrará en la variación de frecuencia</p>
+      <p>En resumen, el modulador prepara la señal para su transmisión, mientras que el demodulador
+        restaura la información original al recibirla. Estos componentes son esenciales en sistemas de
+        comunicación para garantizar una transmisión eficiente y precisa de la información. [1]</p>
+
+      <h1 id="Fourier">Series de Fourier y transformada de Fourier</h1>
+      <p>El estudio de Fourier, además de ser una disciplina matemática fascinante que aborda funciones
+        complejas tanto de variables reales como complejas, posee aplicaciones significativas en
+        diversas ramas de la ingeniería. [4]</p>
+      <p>Una señal se define como una función que describe las fluctuaciones en el tiempo de una
+        variable física. Su clasificación puede basarse en la forma en que varía con el tiempo, en su
+        contenido de energía o potencia, así como en su periodicidad. En lo que respecta a la variación
+        temporal, las señales se dividen en dos categorías principales: señales de tiempo continuo, en
+        las cuales la variable tiempo se expresa como una variable real:</p>
+      
+      <div class="image-container">
+        <img src="./media/capOne/aplicaciones.png" alt="Imagen del Capítulo 1">
+      </div>
+
+      <p>O de tiempo discreto, que son aquellas en las cuales la variable tiempo se representa como una
+      variable entera.</p>
+
+      <div class="image-container">
+        <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+      </div>
+
+      <p>Una señal se dice que es de energía si su E es finita, lo que implica que su potencia sea cero. Por
+        ejemplo, los pulsos limitados en el tiempo</p>
+      <div class="image-container">
+        <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+      </div>
+
+      <p>Una señal se considera de potencia cuando su potencia es limitada, lo que sugiere que su
+        energía total puede ser infinita. Un ejemplo típico de estas señales se presenta en el caso de
+        las señales periódicas. [4]</p>
+
+        <div class="image-container">
+          <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+        </div>
+
+      <p>Las señales periódicas son aquellos que para un T0 > 0, se debe cumplir con</p>
+
+      <div class="image-container">
+        <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+      </div>
+      
+      <p>Las señales aperiódicas, que son aquellas que no cumplen la característica de periodicidad.</p>
+
+      <h2>Serie Trigonométrica de Fourier</h2>
+
+      <p>Teniendo en cuenta la periodicidad de las señales, Fourier pudo asegurar que toda señal
+        periódica se puede expresar en términos de una serie de senos y cosenos, de la forma</p>
+      
+      <div class="image-container">
+        <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+      </div>
+
+      <p>Esta serie es conocida como Serie Trigonométrica de Fourier, donde a los coeficientes 𝑎0, 𝑎𝑛 y
+        𝑏𝑛 son los Coeficientes Trigonométricos de Fourier, mientras que w0 es la frecuencia
+        fundamental de la señal. Estos coeficientes trigonométricos se definen como</p>
+
+        <div class="image-container">
+          <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+        </div>
+      <h2>Funciones Par</h2>
+      <p>Una función 𝑓(𝑡) será función par si 𝑓(𝑥) = 𝑓(−𝑥), para todo x en su dominio. En este caso,
+        la ecuación 𝑦 = 𝑓(𝑥) no cambia si se sustituye 𝑥 por – 𝑥, 𝑦, por consiguiente, cuando esto
+      sucede la gráfica de una función par es simétrica respecto al eje y</p>
+
+      <div class="image-container">
+        <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+      </div>
+
+      <h2>Funciones Impar</h2>
+      <p>Se dice que una función es impar, si 𝑓(– 𝑥) = – 𝑓(𝑥) para toda x en su dominio. Para este caso
+        la gráfica es simétrica con respecto al origen</p>
+
+        <div class="image-container">
+          <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+        </div>
+        
+      <h2>Funciones de Media Onda</h2>
+
+      <p>La función 𝑓(𝑡) es simétrica de media onda cuando 𝑓(𝑡) = −𝑓(−𝑡), la grafica de la función de
+        media onda es simétrica respecto al origen.</p>
+
+      <h2>Ejemplo 1:</h2>
+
+      <p>Encontrar la serie de Fourier para la onda cuadrada:</p>
+      
+      <div class="image-container">
+        <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+      </div>
+
+      <p>La función es impar; por lo tanto, los coeficientes 𝑎0 = 𝑎𝑛 = 0 y</p>
+
+      <div class="image-container">
+        <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+      </div>
+
+      <p>Debido a que cos(𝑛𝜋) = (-1)^n</p>
+
+      <div class="image-container">
+        <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+      </div>
+
+      <p>Por tanto, la serie de Fourier de la onda cuadrada es:</p>
+
+      <div class="image-container">
+        <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+      </div>
+
+      <p>Debido a que 𝑎𝑛 = 0, la amplitud y la fase son</p>
+
+      <div class="image-container">
+        <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+      </div>
+
+      <h2>Ejemplo 2:</h2>
+
+      <p>Encontrar la serie de Fourier para la onda triangular:</p>
+
+      <div class="image-container">
+        <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+      </div>
+
+      <p>La función es par; por tanto, el coeficiente 𝑏𝑛 = 0 y</p>
+
+      <div class="image-container">
+        <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+      </div>
+
+      <p>Para el coeficiente 𝑎𝑛 = 0 se obtiene:</p>
+
+      <div class="image-container">
+        <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+      </div>
+
+      <p>Debido a que cos(𝑛𝜋) = (−1)^n</p>
+
+      <div class="image-container">
+        <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+      </div>
+
+      <p>Por tanto, la serie de Fourier de la onda triangular es</p>
+
+      <div class="image-container">
+        <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+      </div>
+
+      <h2>Serie de Exponenciales de Fourier</h2>
+      <p>Además, las señales periódicas pueden expresarse en términos de una serie de exponenciales
+        complejos, de la forma:</p>
+
+        <div class="image-container">
+          <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+        </div>
+
+        <p>Esta serie se conoce como la Serie Exponencial de Fourier, en la cual los términos 𝑐𝑛 representan
+          los Coeficientes Exponenciales de Fourier, y 𝑤0 denota la frecuencia fundamental de la señal.
+          [4]</p>
+
+        <p>Los coeficientes complejos de Fourier:</p>
+
+        <div class="image-container">
+          <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+        </div>
+
+        <p>Para calcular los coeficientes 𝐶0 se utilizan los intervalos de 0 hasta 𝑇0 ó de −𝑇0
+          2 hasta 𝑇0
+          2 para la
+          integración. Al establecer n=0. Obtenemos</p>
+        
+          <div class="image-container">
+            <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+          </div>
+
+          <p>Lo cual indica que el coeficiente 𝐶0 es igual al valor promedio de 𝑥(𝑡) sobre un período.</p>
+        
+        <h2>Ejemplo 1:</h2>
+
+        <p>Encontrar la serie compleja de Fourier para la función</p>
+        <div class="image-container">
+          <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+        </div>
+
+        <p>Para 𝑛 = 0, se calcula 𝐶0.</p>
+
+        <div class="image-container">
+          <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+        </div>
+
+        <p>Los coeficientes 𝐶𝑛 pueden encontrarse:</p>
+        <div class="image-container">
+          <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+        </div>
+
+        <p>Debido a que 𝑒−𝑗2𝜋𝑛 = 1, 1
+          𝑗 = −𝑗, y 𝜔0 = 2𝜋
+          𝑇 , entonces</p>
+
+          <div class="image-container">
+            <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+          </div> 
+
+        <p>La serie compleja de Fourier de la función diente de sierra es</p>
+
+        <div class="image-container">
+          <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+        </div> 
+
+        <p>donde la sumatoria solo incluye enteros diferentes de cero.</p>
+
+        <h2>Ejemplo 2:</h2>
+        <div class="image-container">
+          <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+        </div>
+
+        <p>La suma de dos señales periódicas con períodos 𝑇1 y 𝑇2, es periódica sólo si la razón de sus
+          períodos respectivos se puede expresar como un número racional:</p>
+
+          <div class="image-container">
+            <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+          </div>
+        
+        <p>Entonces, el período fundamental es el mínimo común múltiplo de 𝑇1 y 𝑇2, está dado por la
+          ecuación:</p>
+
+          <div class="image-container">
+            <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+          </div>
+
+        <h1 id="Espectro">Densidad Espectral de Potencia</h1>
+
+        <p>La densidad espectral de una señal se obtiene mediante la transformada de Fourier de la señal,
+          ya sea la transformada de Fourier discreta (DFT) para señales discretas o la transformada de
+          Fourier continua (CTFT) para señales continuas. La densidad espectral se representa como una
+          función que muestra la contribución relativa de cada frecuencia al contenido de energía de la
+          señal</p>
+
+          <div class="image-container">
+            <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+          </div>
+
+          <h2>Densidad Espectral</h2>
+          <p>La Densidad Espectral de Potencia (siglas DEP, en inglés Power Spectral Density) de una señal es
+            una función matemática que da a conocer la distribución de la potencia de dicha señal sobre las
+            distintas frecuencias en donde está formada. Así, se puede establecer el rango de frecuencias
+            donde se concentran las variaciones de potencia. La observación del comportamiento de señales
+            en el dominio de la frecuencia resulta de gran ayuda, ya que se pueden discriminar las
+            variaciones más fácilmente que en el dominio del tiempo, esto permite la comparación entre
+            dos grupos poblacionales, y detectar una variación en el comportamiento del parámetro
+            estudiado</p>
+            <div class="image-container">
+              <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+            </div>
+
+            <h2>Transformada de Fourier</h2>
+          
+          <p>La transformada de Fourier es una operación matemática indispensable para un gran número
+            de disciplinas. Se usa en campos como la medicina, las telecomunicaciones, la ingeniería
+            acústica, los circuitos eléctricos, el diseño de puentes frente a resonancias y la compresión de
+            pistas de audio, entre otros</p>
+
+          <p>Es usada para transformar señales entre el dominio del tiempo o espacio al dominio de la
+            frecuencia, y viceversa.</p>
+
+            <div class="image-container">
+              <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+            </div>
+
+          <h2>Convergencia de la transformada de Fourier</h2>
+          <p>Del mismo modo que en el caso de las señales periódicas, las condiciones suficientes para la
+            convergencia de X(v) son las siguientes (de nueva cuenta, se hace referencia a ellas como las
+            condiciones de Dirichlet)</p>
+
+            <ul class="ul-item">
+              <li>
+                𝑥(𝑡) es absolutamente integrable
+              </li>
+              <img src="" alt="">
+              <li>𝑥(𝑡) tiene un número finito máximo y mínimo dentro de cualquier intervalo finito.</li>
+              <li>𝑥(𝑡) tiene un número finito de discontinuidades dentro de cualquier intervalo finito.</li>
+            </ul>
+
+            <h2>Propiedades de la transformada de Fourier</h2>
+            <div class="image-container">
+              <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+            </div>
+
+          <h1>Convolución</h1>
+          <p>La convolución es una operación matemática que combina dos funciones para crear una tercera
+            función que representa cómo una de las funciones "influye" en la otra a medida que se desplaza
+            a lo largo del eje de la variable independiente.</p>
+          <p>Condiciones</p>
+          <div class="image-container">
+            <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+          </div>
+
+          <p>a convolución de dos funciones 𝑓(𝑡) y 𝑔(𝑡) se denota como (𝑓 ∗ 𝑔) y se define como:</p>
+
+          <div class="image-container">
+            <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+          </div>
+
+          <p>τ es una variable de integración y representa el desplazamiento de una de las funciones, y el
+            resultado de la convolución se obtiene al integrar el producto de las dos funciones después de
+            desplazar una de ellas.</p>
+          
+            <div class="image-container">
+              <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+            </div>
+
+            <p>La convolución es una operación matemática que se utiliza en diversos campos, y sus
+              aplicaciones son amplias y variadas. Aquí tienes algunas de las aplicaciones más comunes:</p>
+            
+              <h2>Aplicaciones de la convolución</h2>
+              <p><strong>Procesamiento de Señales y Sistemas:</strong></p>
+              <p>La convolución se utiliza para implementar filtros en el procesamiento de señales, como en la
+                eliminación de ruido o la mejora de la calidad de la señal. En sistemas lineales, la convolución
+                se emplea para calcular la respuesta de un sistema a una entrada dada.</p>
+              <p><strong>Procesamiento de Imágenes:</strong></p>
+              <p>La convolución se aplica para realizar operaciones de filtrado en imágenes, como el suavizado o
+                la detección de bordes. Se utiliza en la identificación y extracción de características relevantes
+                en imágenes</p>
+                <p><strong>Comunicaciones:</strong></p>
+                <p>Modulación y Demodulación: La convolución se aplica en el diseño de sistemas de comunicación
+                  para realizar la modulación y demodulación de señales</p>
+                <p><strong>Teoría de la Probabilidad y Estadísticas:</strong></p>
+                <p>Función de Densidad de Probabilidad: En estadísticas, la convolución se utiliza para calcular la
+                  función de densidad de probabilidad de la suma de dos variables aleatorias independientes</p>
+                <p><strong>Redes Neuronales:</strong></p>
+                <p>Capas Convolucionales: En el campo del aprendizaje profundo, las capas convolucionales se
+                  utilizan para extraer características espaciales de datos, como en el reconocimiento de
+                  imágenes.</p>
+                  <p><strong>Procesamiento de Señales de Audio:</strong></p>
+                  <p>Filtrado de Audio: La convolución se aplica en el procesamiento de señales de audio para realizar
+                    operaciones como la reverberación y la simulación de espacios acústicos</p>
+                  <p><strong>Procesamiento de Vídeo:</strong></p>
+                  <p>Seguimiento de Objetos: En el seguimiento de objetos en vídeos, la convolución se emplea para
+                    identificar patrones y realizar análisis temporal.</p>
+
+                  <p><strong>Geofísica y Procesamiento de Señales Sísmicas:</strong></p>
+                  <p>Filtrado Sísmico: En geofísica, la convolución se utiliza para filtrar señales sísmicas y mejorar la
+                    calidad de la información obtenida.</p>
+
+                    <div class="image-container">
+                      <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+                    </div>
+
+                  <h1 id="AutoCo">Autocorrelación de señales</h1>
+                  <p>La autocorrelación de señales es una medida que indica la similitud o la correlación entre una
+                    señal y una versión desplazada de sí misma en el tiempo</p>
+                  
+                  <p>𝑥(𝑡) → 𝑆𝑖𝑠𝑡𝑒𝑚𝑎 𝑑𝑒 𝑐𝑜𝑚𝑢𝑛𝑖𝑐𝑎𝑐𝑖ó𝑛 → 𝑥′(𝑡)</p>
+                  <p>Donde</p>
+                  <div class="image-container">
+                    <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+                  </div>
+                  <p>La autocorrelación de una señal discreta x[n] se define como:</p>
+                  <div class="image-container">
+                    <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+                  </div>
+
+                  <h2>Propiedades de la Autocorrelación</h2>
+                  <p>Definiremos las propiedades de la autocorrelación unidimensional. La mayoría de sus
+                    propiedades son extensibles fácilmente a los casos multidimensionales. [5]</p>
+
+                  <ol>
+                    <li>Simetría: 𝑅𝑥𝑥[𝑘] = 𝑅𝑥𝑥[−𝑘]</li>
+                    <li>Valor máximo: El máximo valor de la autocorrelación ocurre en el desplazamiento cero.</li>
+                    <li>Energía no negativa: 𝑅𝑥𝑥[𝑘] ≥ 0 para todos los desplazamientos k.</li>
+                    <li>Relación con la transformada de Fourier: La autocorrelación está relacionada con la
+                      densidad espectral de potencia a través de la transformada de Fourier.</li>
+                    <li>Información sobre periodicidad: La autocorrelación revela información sobre la
+                      periodicidad y los patrones repetitivos de una señal.</li>
+                    <li>Información sobre periodicidad: La autocorrelación revela información sobre la
+                      periodicidad y los patrones repetitivos de una señal.</li>
+                  </ol>
+                  <div class="image-container">
+                    <img src="./media/capOne/catv.png" alt="Imagen del Capítulo 1">
+                  </div>
+
+                  <h2>Aplicaciones de la autocorrelación</h2>
+                  <p>La autocorrelación es una herramienta matemática que se utiliza en diversas disciplinas para
+                    analizar la similitud o patrones de repetición en una serie temporal o señal. Aquí tienes
+                    algunas aplicaciones comunes de la autocorrelación</p>
+
+                  <h2>Procesamiento de Señales:</h2>
+                  <p><strong>Análisis Espectral:</strong> En el dominio de las señales, la autocorrelación se utiliza para calcular el
+                    espectro de potencia y entender la distribución de energía en diferentes frecuencias</p>
+                  <h2>Comunicaciones</h2>
+                  <p><strong>Detección de Sincronización:</strong> La autocorrelación se aplica en sistemas de comunicación para
+                    sincronizar señales, identificar patrones y determinar el tiempo de llegada de una señal.</p>
+                  <p><strong>Procesamiento de Imágenes:</strong> En el análisis de imágenes, la autocorrelación puede utilizarse para evaluar la periodicidad o
+                    repeticiones en patrones de pixeles</p>
+                  <h2>Ingeniería de Control</h2>
+                  <p><strong>Identificación de Sistemas Dinámicos:</strong> En el control de procesos, la autocorrelación puede ser
+                    utilizada para caracterizar la respuesta dinámica de un sistema y facilitar la identificación de
+                    parámetros.</p>
+                  <h2>Procesamiento de Audio</h2>
+                  <p><strong>Reverberación y Eco:</strong> En el procesamiento de audio, la autocorrelación se utiliza para analizar la
+                    duración y características temporales de fenómenos acústicos como la reverberación y el eco</p>
+
+
+      <h2>Bibliografía</h2>
+      <p>F. T. Margarita Cabrera, «Introducción a los sistemas de comunicaciones,» [En línea].
+        Available:
+        https://openaccess.uoc.edu/bitstream/10609/69406/6/Sistemas%20de%20comunicación%
+        20I_Módulo%201_%20Introducción%20a%20los%20sistemas%20de%20comunicaciones.pd
+        f. [Último acceso: 01 01 2024
+      </p>
+      <p>
+        I. B. MANZANAREZ, «SEÑAL ANALÓGICA Y DIGITAL,» 01 01 2023. [En línea]. Available:
+        https://www.goconqr.com/mindmap/25375849/senal-analogica-y-digital.
+      </p>
+      <p>
+        Iteevaredes1, «Medios guiados y no guiados,» Eva para redes I, 31 12 2023. [En línea].
+        Available: http://iteevaredes1.blogspot.com/2014/10/medios-guiados-y-no-guiados.html.
+      </p>
+      <p>
+        J. E. Domblad, «Series de Fourier Aplicación: Análisis de Señales,» Universidad Nacional del
+        Sur, Argentina , 2011.
+      </p>
+      <p>L. W. Couch, Sistemas de comunicacion digitales y analogicos, México: Pearson, 2002</p>
+
+
+      
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=5JyXvKYfV38" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    
+  </div>
+
+  <a href="files/DeberOne.pdf" target="_blank"><button class="btn">Descarga Pdf</button></a>
+</section>
+
+<!-- Fin Section Capitulo uno -->
 
 <!-- about section starts  -->
 
