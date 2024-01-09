@@ -49,10 +49,10 @@
           <li class="dropdown">
             <a href="#capThree">Unidad 3</a>
             <div class="dropdown-content">
-              <a href="#MathSignal">Generalidades de los sistemas de Comunicaciones</a>
-              <a href="#Fourier">ASK (Modulación por desplazamiento de amplitud), FSK (Modulación por desplazamiento de frecuencia)</a>
-              <a href="#Espectro">PSK (Modulación por desplazamiento de fase)</a>
-              <a href="#AutoCo">QAM (Modulación de amplitud en cuadratura)</a>
+              <a href="#GeneCom">Generalidades de los sistemas de Comunicaciones</a>
+              <a href="#ASK">ASK (Modulación por desplazamiento de amplitud), FSK (Modulación por desplazamiento de frecuencia)</a>
+              <a href="#PSK">PSK (Modulación por desplazamiento de fase)</a>
+              <a href="#QAM">QAM (Modulación de amplitud en cuadratura)</a>
             </div>
           </li>
           <li class="dropdown">
@@ -1581,12 +1581,15 @@
     <h2 id="MathSignal">Unidad 3</h2>
     <div class="content">
       <div class="text-container">
-        <h1>GENERALIDADES DE LOS SISTEMAS DE COMUNICACIONES</h1>
+        <h1 id="GeneCom">GENERALIDADES DE LOS SISTEMAS DE COMUNICACIONES</h1>
         <h2>TRANSMISIÓN DE DATOS</h2>
         <div class="image-container">
-            <img src="./media/capOne/Historia.png" alt="Imagen del Capítulo 1">
+            <img src="files/UnidadTres/1.png" alt="Imagen del Capítulo 3">
         </div>
-        <h2>Utilización del sistema de transmisión</h2>
+        <div class="image-container">
+          <img src="files/UnidadTres/2.png" alt="Imagen del Capítulo 3">
+        </div>
+        <h2>1. Utilización del sistema de transmisión</h2>
         <p>
           Todo medio de telecomunicaciones es costoso, más aún cuanto mayor sea la distancia que cubre. Por
           lo cual se debe tratar de utilizar al máximo su ancho de banda, para transmitir todo tipo de información
@@ -1594,7 +1597,7 @@
           tal como se muestra en la Ilustración 1.
         </p>
         <div class="image-container">
-          <img src="./media/capOne/Historia.png" alt="Imagen del Capítulo 1">
+          <img src="files/UnidadTres/3.png" alt="Imagen del Capítulo 3">
         </div>
         <h2>2. Interfaz</h2>
         <p>
@@ -1604,8 +1607,9 @@
           las interfaces de interconexión entre módems y computadores en un enlace punto a punto.
         </p>
         <div class="image-container">
-          <img src="./media/capOne/Historia.png" alt="Imagen del Capítulo 1">
+          <img src="files/UnidadTres/4.png" alt="Imagen del Capítulo 3">
         </div>
+       
         <h2>3. Generación de señales</h2>
         <p>
           Los sistemas informáticos no están adaptados para comunicarse directamente con los medios de
@@ -1615,8 +1619,9 @@
           en frecuencia.
         </p>
         <div class="image-container">
-          <img src="./media/capOne/Historia.png" alt="Imagen del Capítulo 1">
+          <img src="files/UnidadTres/5.png" alt="Imagen del Capítulo 3">
         </div>
+        
         <h2>4. Sincronización</h2>
         <p>
           Este proceso permite al receptor determinar el inicio de un carácter o una secuencia de bytes. Como
@@ -1625,16 +1630,18 @@
           un flag de final.
         </p>
         <div class="image-container">
-          <img src="./media/capOne/Historia.png" alt="Imagen del Capítulo 1">
+          <img src="files/UnidadTres/6.png" alt="Imagen del Capítulo 3">
         </div>
+        
         <h2>5. Administración de intercambio de señales</h2>
         <p>
           Para que un modem pueda transmitir las señales de un computador debe coordinar las acciones que
           debe llevar a cabo en el momento adecuado, para cuyo efecto requiere intercambiar señales de control
         </p>
         <div class="image-container">
-          <img src="./media/capOne/Historia.png" alt="Imagen del Capítulo 1">
+          <img src="files/UnidadTres/7.png" alt="Imagen del Capítulo 3">
         </div>
+       
         <h2>
           6. Detección y corrección de errores
         </h2>
@@ -1650,8 +1657,9 @@
           corrección de errores hacia delante (FEC - Forward Error Correction).
         </p>
         <div class="image-container">
-          <img src="./media/capOne/Historia.png" alt="Imagen del Capítulo 1">
+          <img src="files/UnidadTres/8.png" alt="Imagen del Capítulo 3">
         </div>
+        
         <h2>7. Control de flujo</h2>
         <p>
           Esta tarea en muy importante a fin de evitar que se pierda información, al estar el receptor
@@ -1660,8 +1668,9 @@
           el protocolo HDLC con sus tramas RNR y RR
         </p>
         <div class="image-container">
-          <img src="./media/capOne/Historia.png" alt="Imagen del Capítulo 1">
+          <img src="files/UnidadTres/9.png" alt="Imagen del Capítulo 3">
         </div>
+        
         <h2>8. Direccionamiento y enrutamiento</h2>
         <p>
           Una computadora para poder establecer una comunicación con otra computadora remota requiere
@@ -1673,8 +1682,9 @@
           como retardo, costo, tasa de errores)
         </p>
         <div class="image-container">
-          <img src="./media/capOne/Historia.png" alt="Imagen del Capítulo 1">
+          <img src="files/UnidadTres/10.png" alt="Imagen del Capítulo 3">
         </div>
+       
         <h2>9. Recuperación</h2>
         <p>
           Este concepto se aplica a las comunicaciones vía redes WAN y consiste en el restablecimiento de una
@@ -1684,7 +1694,7 @@
           comunicación, ni de información.
         </p>
         <div class="image-container">
-          <img src="./media/capOne/Historia.png" alt="Imagen del Capítulo 1">
+          <img src="files/UnidadTres/11.png" alt="Imagen del Capítulo 3">
         </div>
         <h2>10. Formato del mensaje</h2>
         <p>
@@ -1696,8 +1706,9 @@
           protocolo HDLC.
         </p>
         <div class="image-container">
-          <img src="./media/capOne/Historia.png" alt="Imagen del Capítulo 1">
+          <img src="files/UnidadTres/12.png" alt="Imagen del Capítulo 3">
         </div>
+        
         <h2>11. Protección</h2>
         <p>
           Como sabemos actualmente la información es un activo muy valioso. Por lo cual esta debe ser
@@ -1708,8 +1719,9 @@
           confidencialidad.
         </p>
         <div class="image-container">
-          <img src="./media/capOne/Historia.png" alt="Imagen del Capítulo 1">
+          <img src="files/UnidadTres/13.png" alt="Imagen del Capítulo 3">
         </div>
+       
         <h2>12. Administración del sistema</h2>
         <p>
           Toda red de comunicación de datos luego de ser implementada de acuerdo con el proyecto que la
@@ -1728,8 +1740,9 @@
           <li>Seguridad</li>
         </ul>
         <div class="image-container">
-          <img src="./media/capOne/DiagramaMedios.png" alt="Imagen del Capítulo 1">
+          <img src="files/UnidadTres/14.png" alt="Imagen del Capítulo 3">
         </div>
+      
         <h2>1. Performance: Caudal y retardo</h2>
         <p>La performance de una red puede ser medida en varias maneras, tales como: tiempo de tránsito y
           tiempo de respuesta. El tiempo de tránsito es la cantidad de tiempo que requiere un mensaje en viajar
@@ -1831,7 +1844,7 @@
           generar un modulador.
         </p>
         <div class="image-container">
-          <img src="./media/capOne/DiagramaMedios.png" alt="Imagen del Capítulo 1">
+          <img src="files/UnidadTres/15.png" alt="Imagen del Capítulo 3">
         </div>
         <p>
           En una constelación cada símbolo tiene asociado un valor de magnitud y uno de fase (como sucede en
@@ -1851,8 +1864,849 @@
           diversas, como por ejemplo en la modulación QAM
         </p>
 
-        <h1>ASK (Modulación por desplazamiento de amplitud)</h1>
+        <h1 id="ASK">ASK (Modulación por desplazamiento de amplitud)</h1>
 
+        <p>
+          La modulación ASK varía la amplitud de la onda portadora, mientras que la modulación FSK varía la 
+          frecuencia. Ambas modulaciones tienen dos puntos de modulación codificando el "0" y el "1" de la 
+          señal digital modulante.
+        </p>
+        <p>
+          uando se varía la amplitud, la técnica de modulación digital que se utiliza se conoce como ASK y 
+          consiste en la variación de la amplitud de la portadora senoidal, que se hace mediante las variaciones 
+          de estado lógico de la señal modulante
+        </p>
+        <div class="image-container">
+          <img src="files/UnidadTres/16.png" alt="Imagen del Capítulo 3">
+        </div>
+        <p>
+          Esta técnica de modulación digital es la más sencilla ya que es una técnica de modulación en amplitud 
+          y doble banda lateral, la señal moduladora es digital.
+        </p>
+        <h2>Expresión matemática de una señal modulada ASK</h2>
+        <div class="image-container">
+          <img src="files/UnidadTres/46.png" alt="Imagen del Capítulo 3">
+        </div>
+        <p>Donde:</p>
+        <p>𝑉𝑚= señal modulante [voltios] </p>
+        <p>𝑊𝑐= frecuencia de la portadora en radianes por segundo</p>
+        <p>A/2= amplitud de la onda no modulada [voltios]</p>
+        <p>El dígito binario “1” se representa mediante la presencia de la portadora a una amplitud constante, 
+          siendo sensible a cambios repentinos de la ganancia, mientras que el otro dígito binario “0” se 
+          representa en ausencia de la señal portadora, por tal motivo ésta es una técnica de modulación ineficaz.</p>
+          
+          <div class="image-container">
+            <img src="files/UnidadTres/47.png" alt="Imagen del Capítulo 3">
+          </div>
+          <div class="image-container">
+            <img src="files/UnidadTres/17.png" alt="Imagen del Capítulo 3">
+          </div>
+          <p>La modulación ASK genera una onda modulada plana para el "cero" y una onda de la frecuencia de la 
+            portadora con una amplitud determinada para el "uno".
+          </p>
+          <div class="image-container">
+            <img src="files/UnidadTres/18.png" alt="Imagen del Capítulo 3">
+          </div>
+          <h2>Dentro de las aplicaciones en ASK se tiene: </h2>
+          <ul class="ul-item">
+            <li> Transmisiones con fibra óptica, ya que la fibra soporta las desventajas de la modulación de 
+              amplitud, ya que ésta presenta atenuación muy baja</li>
+          </ul>
+          <h1> MODULACIÓN BASK</h1>
+          <p>La modulación BASK es un tipo de modulación de amplitud en la cual la amplitud de una onda 
+            portadora se altera entre dos niveles para representar datos binarios. </p>
+            <div class="image-container">
+              <img src="files/UnidadTres/19.png" alt="Imagen del Capítulo 3">
+            </div>
+          <p>Aquí hay más detalles técnicos:</p>
+          <p> Forma de la Señal Modulada: La señal modulada s(t) en BASK se puede expresar 
+            matemáticamente como:
+          </p>
+          <div class="image-container">
+            <img src="files/UnidadTres/48.png" alt="Imagen del Capítulo 3">
+          </div>
+          <p>Donde</p>
+          <ul class="ul-item">
+            <li>Ac es la amplitud de la portadora</li>
+            <li>m es la amplitud de la señal de datos binarios (m=1 para BASK).</li>
+            <li>b(t) es la señal de datos binarios (puede tomar valores de 0 o 1).</li>
+            <li>fc es la frecuencia de la portadora.</li>
+            <li>t es el tiempo.</li>
+          </ul>
+          <p>2. Diagrama de Constelación: En un diagrama de constelación para BASK, los dos puntos 
+            principales representan los dos niveles de amplitud que se utilizan para la transmisión de los 
+            bits. Puedes imaginar un punto alto para representar un bit 1 y un punto bajo para representar 
+            un bit 0.</p>
+          <p>3. Eficiencia Espectral: La eficiencia espectral se refiere a la cantidad de ancho de banda 
+            utilizado por el esquema de modulación. BASK, al utilizar dos niveles de amplitud, puede ser 
+            menos eficiente en términos de ancho de banda en comparación con esquemas de modulación 
+            más avanzados.
+          </p>
+          <p>4. Detalles de Implementación:</p>
+          <ul class="ul-item">
+            <li> La implementación de BASK en la práctica implica el uso de circuitos electrónicos 
+              para modular la señal de datos en la portadora.</li>
+            <li> Pueden usarse técnicas de filtrado para limitar el ancho de banda ocupado por la señal 
+              modulada.</li>
+          </ul>
+          <p>5. Ruido y Sensibilidad:</p>
+          <ul class="ul-item">
+            <li>BASK puede ser más susceptible al ruido en comparación con otras formas de 
+              modulación</li>
+            <li>Es importante considerar la relación señal-ruido (SNR) para garantizar una 
+              transmisión confiable.</li>
+          </ul>
+          <p>Ten en cuenta que mientras que BASK es un ejemplo de modulación de amplitud binaria, hay otros 
+            esquemas de modulación binaria como BPSK (Binary Phase Shift Keying) y BFSK (Binary Frequency 
+            Shift Keying), cada uno de los cuales modula diferentes propiedades de la señal portadora para 
+            representar datos binarios.
+          </p>
+          <h1>MODULACIÓN MASK</h1>
+          <p>
+            La modulación M-ASK implica la variación de la amplitud de la señal portadora entre M niveles 
+            distintos. Cada nivel de amplitud representa un símbolo diferente, y cada símbolo puede representar 
+            múltiples bits de información.
+          </p>
+          <div class="image-container">
+            <img src="files/UnidadTres/20.png" alt="Imagen del Capítulo 3">
+          </div>
+          <p>La forma general de la señal modulada M-ASK puede expresarse como:
+          </p>
+          <div class="image-container">
+            <img src="files/UnidadTres/49.png" alt="Imagen del Capítulo 3">
+          </div>
+          <p>Donde</p>
+          <ul class="ul-item">
+            <li>M es el número de niveles de amplitud.
+            </li>
+            <li>Ai son las amplitudes asociadas a cada nivel (por ejemplo, A1,A2,…,AM)</li>
+            <li>fc es la frecuencia de la portadora.
+            </li>
+            <li>Tb es el periodo de bit</li>
+          </ul>
+          <p></p>
+          <h1>Características de la Modulación M-ASK:</h1>
+          <p>1. Eficiencia Espectral:
+          </p>
+          <ul class="ul-item">
+            <li>La modulación M-ASK puede ser más eficiente en términos de ancho de banda en 
+              comparación con modulaciones de amplitud binaria (como BASK) al transmitir 
+              más información por símbolo.</li>
+          </ul>
+          <p>2. Sensibilidad al Ruido:</p>
+          <ul class="ul-item">
+            <li>La sensibilidad al ruido puede aumentar con el número de niveles de amplitud. Sin 
+              embargo, el rendimiento en presencia de ruido depende de otros factores como la 
+              constelación y la relación señal-ruido (SNR).</li>
+          </ul>
+          <p>3. Constelación de la Señal:</p>
+          <ul class="ul-item">
+            <li> En un diagrama de constelación, se pueden observar múltiples puntos que 
+              representan los diferentes niveles de amplitud. La disposición de estos puntos en el 
+              plano complejo es específica para la constelación utilizada.</li>
+          </ul>
+          <p>4. Aplicaciones:</p>
+          <ul class="ul-item">
+            <li> La modulación M-ASK se utiliza en diversas aplicaciones, como sistemas de 
+              comunicación digital, redes inalámbricas, y transmisión de datos.
+              </li>
+          </ul>
+          <p>Es importante destacar que, en sistemas de comunicación prácticos, la elección de M depende de varios 
+            factores, como la calidad del canal, la relación señal-ruido, y la complejidad del receptor. Además, es 
+            posible que se utilice codificación de canal y técnicas de modulación adaptativa para mejorar el 
+            rendimiento del sistema en condiciones variables.
+          </p>
+          <h1>MODULACIÓN OOK- ASK</h1>
+          <p>La modulación OOK-ASK (On-Off Keying - Amplitude Shift Keying) es una combinación de dos 
+            técnicas de modulación: OOK y ASK. </p>
+            <div class="image-container">
+              <img src="files/UnidadTres/21.png" alt="Imagen del Capítulo 3">
+            </div>
+            <p>Estos son conceptos relacionados pero distintos:
+            </p>
+            <h2>1. OOK (On-Off Keying):</h2>
+            <ul class="ul-item">
+              <li>En OOK, la información se transmite variando simplemente la presencia o ausencia 
+                de una portadora. En otras palabras, la señal portadora se enciende ("on") para 
+                representar un bit 1 y se apaga ("off") para representar un bit 0.</li>
+            </ul>
+            <h2>2. ASK (Amplitude Shift Keying):
+            </h2>
+            <ul class="ul-item">
+              <li>En ASK, la amplitud de la portadora se modula para representar información binaria. 
+                Puedes tener dos niveles de amplitud, como en BASK (Binary ASK), o más niveles 
+                en M-ASK (Modulación de Amplitud por Desplazamiento de Múltiples Niveles).</li>
+            </ul>
+            <p>Cuando se combina OOK y ASK, se obtiene OOK-ASK, donde la presencia o ausencia de la portadora 
+              indica la información binaria, y además, la amplitud de la portadora puede variar para transmitir 
+              información adicional.</p>
+            <h2>Forma Matemática de OOK-ASK:
+            </h2>
+            <p>La señal modulada OOK-ASK se puede expresar matemáticamente como:
+            </p>
+            <div class="image-container">
+              <img src="files/UnidadTres/50.png" alt="Imagen del Capítulo 3">
+            </div>
+            <p>Donde:</p>
+            <ul class="ul-item">
+              <li>s(t) es la señal modulada.</li>
+              <li>Ac es la amplitud de la portadora.</li>
+              <li>bi es el bit de datos en el tiempo t.</li>
+            </ul>
+            <p>En este caso, cuando el bit bi es 1, la señal tiene la amplitud completa Ac, y cuando el bit bi es 0, la 
+              señal es 0 (la portadora está apagada).
+            </p>
+            <h2>Características de OOK-ASK:</h2>
+            <p>1. Simplicidad:</p>
+            <ul class="ul-item">
+              <li>OOK-ASK es una forma sencilla de modulación y es fácil de implementar.</li>
+            </ul>
+            <p>2. Eficiencia Espectral:</p>
+            <ul class="ul-item">
+              <li>Puede ser menos eficiente en términos de ancho de banda en comparación con 
+                técnicas más avanzadas, ya que solo utiliza dos niveles de amplitud.</li>
+            </ul>
+            <p>3. Aplicaciones:</p>
+            <ul class="ul-item">
+              <li> Se utiliza comúnmente en sistemas de transmisión inalámbrica de corto alcance, 
+                como en tecnologías RFID (Identificación por Radiofrecuencia) y algunos sistemas 
+                de control remoto.</li>
+            </ul>
+            <p>
+              La elección entre OOK, ASK o una combinación de ambas depende de las especificaciones del 
+              sistema, la calidad del canal y los requisitos de ancho de banda.
+            </p>
+            <h1>FSK (Modulación por desplazamiento de frecuencia)
+            </h1>
+            <p>Cuando se varía la frecuencia la técnica de modulación digital que se utiliza se conoce como FSK y 
+              consiste en la modificación de frecuencia en la portadora senoidal, que se hace mediante las 
+              variaciones de estado lógico de la señal modulante</p>
+            <p>Para la modulación por desplazamiento de frecuencia FSK, la frecuencia de la señal portadora cambia 
+              para representar un “0” o un “1” binario, mientras que la frecuencia durante la duración de bit 
+              permanece constante, la amplitud y la fase permanecen constantes. Los valores binarios “1” y “0” se 
+              representan mediante dos frecuencias diferentes a la de la portadora.</p>
+            <h1>Expresión matemática de una señal modulada</h1>
+            <div class="image-container">
+              <img src="files/UnidadTres/51.png" alt="Imagen del Capítulo 3">
+            </div>
+            <p>Donde:</p>
+            <ul class="ul-item">
+              <li>𝑉𝑐= amplitud de la portadora [Voltios] </li>
+              <li>𝑓𝑐= frecuencia central de la portadora [Hz]
+              </li>
+              <li>𝑉𝑚= señal modulante (± 1) </li>
+              <li>∆𝑓= desviación máxima de frecuencia [Hz]
+              </li>
+            </ul>
+            <div class="image-container">
+              <img src="files/UnidadTres/52.png" alt="Imagen del Capítulo 3">
+            </div>
+            <div class="image-container">
+              <img src="files/UnidadTres/22.png" alt="Imagen del Capítulo 3">
+            </div>
+            <p>Donde f1 y f2 pertenecen a desplazamientos de la frecuencia portadora fc con igual magnitud pero 
+              en sentidos opuestos se puede decir que es la combinación de dos espectros ASK, por tal razón FSK 
+              es menos sensible a errores que ASK.</p>
+            <p>El ancho de banda para FSK es:</p>
+            <div class="image-container">
+              <img src="files/UnidadTres/53.png" alt="Imagen del Capítulo 3">
+            </div>
+            <p>Para la modulación FSK no es útil un gráfico de constelación, pues usa dos frecuencias base, con 
+              valores ± fportadora,
+              sin variación de amplitud ni fase.
+            </p>
+            <div class="image-container">
+              <img src="files/UnidadTres/23.png" alt="Imagen del Capítulo 3">
+            </div>
+            <h1>Dentro de las aplicaciones con modulación FSK se tiene:</h1>
+            <ul class="ul-item">
+              <li>La modulación FSK se emplea generalmente en enlaces asíncronos.</li>
+              <li>Es un sistema ideal para operar a bajas velocidades.</li>
+              <li>La modulación FSK es muy usada en radiocomunicaciones “estaciones de radiodifusión 
+                pública”</li>
+            </ul>
+            <p>La modulación digital tiene la gran desventaja que consume gran ancho de banda. FSK es menos 
+              sensible a errores que ASK, es utilizada en líneas de calidad telefónica utiliza velocidades de hasta 
+              1200 bps. Es usada también en transmisión de radio a altas frecuencias que van desde 3 MHz hasta 30 
+              MHz, también es usada en redes de área local que utilicen cable coaxial.</p>
+            <h1>MODULACIÓN BFSK</h1>
+            <p>
+              La modulación BFSK (Binary Frequency Shift Keying) es una técnica de modulación de frecuencia 
+              que se utiliza para transmitir datos binarios. En BFSK, se utilizan dos frecuencias portadoras diferentes 
+              para representar los dos valores binarios (0 y 1). Cada frecuencia está asociada a un bit específico, y 
+              la transmisión de datos se logra cambiando la frecuencia de la portadora en función de la secuencia de 
+              bits a enviar.
+            </p>
+            <div class="image-container">
+              <img src="files/UnidadTres/24.png" alt="Imagen del Capítulo 3">
+            </div>
+            <h1>Forma Matemática de BFSK:</h1>
+            <p>La expresión matemática para la señal modulada BFSK puede ser representada como:
+            </p>
+            <div class="image-container">
+              <img src="files/UnidadTres/54.png" alt="Imagen del Capítulo 3">
+            </div>
+            <p>Donde:</p>
+            <ul class="ul-item">
+              <li>s(t) es la señal modulada.</li>
+              <li>A es la amplitud de la portadora.</li>
+              <li>f1 y f2 son las frecuencias de las dos portadoras, asociadas a los bits 0 y 1 respectivamente.</li>
+              <li>bi es el bit de datos en el tiempo t.
+              </li>
+            </ul>
+            <h2>Características de BFSK:
+            </h2>
+            <p>1. Eficiencia Espectral:</p>
+            <ul class="ul-item">
+              <li>La eficiencia espectral de BFSK puede ser mejor que la de algunas otras formas de 
+                modulación, ya que utiliza solo dos frecuencias.</li>
+            </ul>
+            <p>2. Inmunidad al Ruido:
+            </p>
+            <ul class="ul-item">
+              <li>BFSK puede ser menos susceptible al ruido en comparación con técnicas de modulación 
+                de amplitud como ASK.</li>
+            </ul>
+            <p>3. Ancho de Banda:
+            </p>
+            <ul class="ul-item">
+              <li>BFSK puede requerir más ancho de banda que algunas otras formas de modulación, 
+                especialmente cuando se utilizan dos frecuencias bastante diferentes.</li>
+            </ul>
+            <p>4. Aplicaciones:
+            </p>
+            <ul class="ul-item">
+              <li>Se utiliza en sistemas de comunicación digital, especialmente en entornos donde la 
+                interferencia y el ruido son preocupaciones.</li>
+            </ul>
+            <h2>Diagrama de Constelación:</h2>
+            <p>En un diagrama de constelación de BFSK, se representarían las dos frecuencias portadoras como 
+              puntos separados. Un punto puede representar el bit 0 y el otro el bit 1. La disposición específica de 
+              estos puntos en el plano complejo dependerá de las frecuencias exactas utilizadas.
+            </p>
+            <p>La elección de las frecuencias de portadora en BFSK se realiza considerando factores como la relación 
+              señal-ruido (SNR), el entorno de transmisión y los requisitos de ancho de banda del sistema.</p>
+            <h2>MODULACIÓN MFSK</h2>
+            <p>La modulación MFSK (Multiple Frequency Shift Keying) es una técnica de modulación de frecuencia 
+              que utiliza múltiples frecuencias portadoras para representar datos digitales. Cada frecuencia se asocia 
+              con un símbolo o un conjunto de bits. A diferencia de la modulación BFSK (Binary Frequency Shift 
+              Keying), donde solo se utilizan dos frecuencias, MFSK utiliza más de dos frecuencias.
+            </p>
+            <div class="image-container">
+              <img src="files/UnidadTres/25.png" alt="Imagen del Capítulo 3">
+            </div>
+            <h2>Forma Matemática de MFSK:
+            </h2>
+            <p>La expresión matemática general para la señal modulada MFSK se puede expresar como:
+            </p>
+            <div class="image-container">
+              <img src="files/UnidadTres/55.png" alt="Imagen del Capítulo 3">
+            </div>
+            <p>Donde:</p>
+            <ul class="ul-item">
+              <li>s(t) es la señal modulada.</li>
+              <li>M es el número de frecuencias portadoras (niveles de amplitud).</li>
+              <li>Ai es la amplitud de la i-ésima portadora.
+              </li>
+              <li>fi es la frecuencia de la i-ésima portadora.</li>
+              <li>ϕi es la fase de la i-ésima portadora.</li>
+            </ul>
+            <h1>PORTADORA VIRTUAL</h1>
+            <div class="image-container">
+              <img src="files/UnidadTres/26.png" alt="Imagen del Capítulo 3">
+            </div>
+            <div class="image-container">
+              <img src="files/UnidadTres/56.png" alt="Imagen del Capítulo 3">
+            </div>
+            <h1>Características de MFSK:</h1>
+            <p>1. Eficiencia Espectral:</p>
+            <ul class="ul-item">
+              <li>MFSK puede ser eficiente en términos de ancho de banda al utilizar múltiples 
+                frecuencias para representar información</li>
+            </ul>
+            <p>2. Resistencia al Ruido:</p>
+            <ul class="ul-item">
+              <li>Puede tener una mayor resistencia al ruido en comparación con algunas formas de 
+                modulación de amplitud.</li>
+            </ul>
+            <p>3. Diagrama de Constelación:
+            </p>
+            <ul class="ul-item">
+              <li> En un diagrama de constelación de MFSK, se pueden observar múltiples puntos, 
+                cada uno representando una combinación específica de frecuencia.
+                </li>
+            </ul>
+            <p>4. Aplicaciones:
+            </p>
+            <ul class="ul-item">
+              <li> Se utiliza en sistemas de comunicación digital y radiodifusión para transmitir 
+                información de manera eficiente.
+                </li>
+            </ul>
+            <h2>Ventajas y Desventajas:</h2>
+            <p>Ventajas:
+            </p>
+            <ul class="ul-item">
+              <li>Mayor resistencia al ruido en comparación con modulaciones de amplitud.</li>
+              <li>Puede proporcionar una mayor eficiencia espectral al usar múltiples frecuencias.</li>
+            </ul>
+            <p>Desventajas:
+            </p>
+            <ul class="ul-item">
+              <li>Puede requerir una mayor complejidad en términos de diseño y hardware en 
+                comparación con técnicas más simples.</li>
+              <li>Puede ser más susceptible a la interferencia de otros sistemas.
+              </li>
+            </ul>
+            <p>La elección del número de frecuencias (M), las amplitudes (Ai), las frecuencias (fi), y las fases (ϕi) 
+              dependerá de los requisitos específicos del sistema y del entorno de transmisión. A menudo, se busca 
+              un equilibrio entre la complejidad del sistema y el rendimiento en condiciones de canal variadas.</p>
+
+            <h1>MODULACIÓN OOK- FSK</h1>
+            <p>La modulación OOK-FSK (On-Off Keying - Frequency Shift Keying) es una combinación de dos 
+              técnicas de modulación: OOK y FSK. Ambas son técnicas de modulación digital utilizadas en sistemas 
+              de comunicación para transmitir información binaria.
+            </p>
+            <h2>1. OOK (On-Off Keying):
+            </h2>
+            <ul class="ul-item">
+              <li>OOK implica variar la presencia o ausencia de una portadora para representar bits. Por 
+                ejemplo, la presencia de la portadora puede representar un bit "1" y la ausencia un bit "0".
+                </li>
+            </ul>
+            <h2>2. FSK (Frequency Shift Keying):
+            </h2>
+            <ul class="ul-item">
+              <li>FSK implica cambiar la frecuencia de la portadora para representar bits. En el caso de 
+                modulación binaria FSK (BFSK), se utilizan dos frecuencias diferentes para representar 
+                los dos valores binarios.
+                </li>
+            </ul>
+            <p>Cuando se combinan OOK y FSK en OOK-FSK, la presencia o ausencia de la portadora representa 
+              información binaria, y la frecuencia de la portadora cambia para representar diferentes bits.
+            </p>
+            <h1>Forma Matemática de OOK-FSK:</h1>
+            <p>La señal modulada OOK-FSK puede expresarse como:</p>
+            <div class="image-container">
+              <img src="files/UnidadTres/57.png" alt="Imagen del Capítulo 3">
+            </div>
+            <p>Donde:</p>
+            <ul class="ul-item">
+              <li>s(t) es la señal modulada.
+              </li>
+              <li>A es la amplitud de la portadora</li>
+              <li>f1 y f2 son las frecuencias de las dos portadoras, asociadas a los bits 0 y 1 respectivamente.</li>
+              <li>bi es el bit de datos en el tiempo t.</li>
+            </ul>
+            <div class="image-container">
+              <img src="files/UnidadTres/27.png" alt="Imagen del Capítulo 3">
+            </div>
+            <h1>Espectro señal OOK
+            </h1>
+            <div class="image-container">
+              <img src="files/UnidadTres/58.png" alt="Imagen del Capítulo 3">
+            </div>
+            <h2>Características de OOK-FSK:</h2>
+            <p>1. Simplicidad:
+            </p>
+            <ul class="ul-item">
+              <li> OOK-FSK puede ser una técnica relativamente simple que combina características de OOK 
+                y FSK.</li>
+            </ul>
+            <p>2. Eficiencia Espectral:
+            </p>
+            <ul class="ul-item">
+              <li>La eficiencia espectral dependerá de las características específicas de las frecuencias 
+                utilizadas.</li>
+            </ul>
+            <p>3. Aplicaciones:
+            </p>
+            <ul class="ul-item">
+              <li>Se utiliza en sistemas de comunicación digital, especialmente en entornos donde se 
+                requiere cierta robustez contra el ruido y la interferencia.</li>
+            </ul>
+            <p>La elección de las frecuencias de portadora y la amplitud depende de los requisitos específicos del 
+              sistema y del entorno de transmisión. Al igual que con otras formas de modulación, es fundamental 
+              equilibrar la complejidad del sistema con la eficiencia y la resistencia al ruido.
+            </p>
+        <h1 id="PSK">PSK (Modulación por desplazamiento de fase)
+        </h1>
+        <p>
+          La modulación por desplazamiento de fase es una modulación angular la cual consiste en variar la fase 
+          de la portadora entre un número “n” de valores discretos posibles. La señal moduladora es una señal 
+          digital que tiene un número de estados limitados. 
+        </p>
+        <p>En la modulación PSK la potencia es constante simplificando el diseño de etapas receptoras y 
+          amplificadores reduciendo costos. Como se puede observar en el cuadro comparativo de la figura 3, 
+          si se analiza desde el punto de vista de protección frente a errores las técnicas de modulación BPSK y 
+          QPSK son recomendables.
+        </p>
+        <div class="image-container">
+            <img src="files/UnidadTres/28.png" alt="Imagen del Capítulo 3">
+        </div>
+        <p>En la técnica de modulación y demodulación PSK la fase de la señal portadora representa cada símbolo 
+          de información de la señal moduladora, un “0” binario se representa mediante la transmisión de una 
+          señal con la misma fase de la señal antes enviada, un “1” binario se representa mediante la transmisión 
+          de una señal cuya fase está en oposición de fase respecto a la señal precedente.</p>
+        <div class="image-container">
+          <img src="files/UnidadTres/29.png" alt="Imagen del Capítulo 3">
+        </div>
+        <h1>Entre las aplicaciones más importantes con la modulación PSK se tiene:</h1>
+        <ul class="ul-item">
+          <li>Transmisión de señales de televisión de alta definición HDTV</li>
+          <li>El espectro de potencia de la señal PSK es muy usado dentro de las empresas que proveen el 
+            servicio de televisión satelital ya que mientras mayor sea la potencia menor es el tamaño de 
+            las antenas parabólicas.
+            </li>
+        </ul>
+        <h1>MODULACIÓN BPSK</h1>
+        <p>BPSK es una modulación de onda cuadrada con portadora suprimida, es utilizada para transmisores 
+          que no requieren altas velocidades y de bajo costo.</p>
+          <div class="image-container">
+            <img src="files/UnidadTres/30.png" alt="Imagen del Capítulo 3">
+          </div>
+          <p>BPSK tiene dos fases de salida y una sola frecuencia, las cuales representan 1 y 0 lógico 
+            respectivamente</p>
+          <p>El espectro de frecuencia que se obtiene a la salida de un modulador BPSK es una señal de doble 
+            banda lateral con portadora suprimida, las frecuencias laterales están separadas de la frecuencia 
+            portadora por un valor igual a la mitad de la razón de bit.</p>
+            <div class="image-container">
+              <img src="files/UnidadTres/59.png" alt="Imagen del Capítulo 3">
+            </div>   
+          <p>Donde:</p>
+          <ul class="ul-item">
+            <li>𝑆𝑛(𝑡)= forma de onda binaria BPSK</li>
+              <li>E𝑏 = energía de bit </li>
+              <li>𝑇𝑏 = periodo de bit</li>
+              <li>𝑓𝑐 = frecuencia de la señal portadora</li>
+              <li>n = número de niveles de la señal digital </li>
+          </ul>
+          <p>La siguiente Ilustración 28 muestra un diagrama de bloques simplificado de un modulador de BPSK.
+            La señal codificada ingresa a un multiplexor el mismo que conmuta la fase de la señal portadora, 
+            dependiendo de la condición lógica de la entrada digital, la portadora se transfiere a la salida, ya sea 
+            en fase o 180° fuera de fase, con el oscilador de la portadora de referencia.</p>
+            <div class="image-container">
+              <img src="files/UnidadTres/31.png" alt="Imagen del Capítulo 3">
+            </div>
+            <p>La ilustración 29 siguiente muestra el diagrama de bloques de un receptor de BPSK</p>
+            <div class="image-container">
+              <img src="files/UnidadTres/32.png" alt="Imagen del Capítulo 3">
+            </div>
+            <p>La señal de entrada puede ser +𝑐𝑜𝑠(2𝜋𝑓𝑐
+              𝑡) 𝑜 − 𝑐𝑜𝑠(2𝜋𝑓𝑐
+              𝑡). El circuito de recuperación detectay 
+              regenera una señal de portadora, tanto en frecuencia como en fase, con la portadora del transmisor 
+              original. El modulador balanceado es un detector de producto; la salida es el producto de las dos 
+              entradas (la señal de BPSK y la portadora recuperada). 
+            </p>
+            <h2>Características de BPSK:</h2>
+            <p>1. Eficiencia Espectral:</p>
+            <ul class="ul-item">
+              <li> BPSK tiene una eficiencia espectral relativamente buena al utilizar una única 
+                frecuencia de portadora</li>
+            </ul>
+            <p>2. Inmunidad al Ruido:</p>
+            <ul class="ul-item">
+              <li>Puede ser más inmune al ruido en comparación con técnicas de modulación de 
+                amplitud debido a la naturaleza de la modulación de fase.</li>
+            </ul>
+            <p>3. Diagrama de Constelación:
+            </p>
+            <ul class="ul-item">
+              <li>En un diagrama de constelación de BPSK, se observan dos puntos, uno para cada 
+                fase de la portadora, representando los dos valores binarios.
+                </li>
+            </ul>
+            <p>4. Aplicaciones:
+            </p>
+            <ul class="ul-item">
+              <li>Se utiliza en sistemas de comunicación digital, como comunicaciones por satélite, 
+                comunicaciones inalámbricas y sistemas de transmisión de datos.                
+                </li>
+            </ul>
+            <h1>Diagrama de Constelación BPSK:</h1>
+          <p>Un diagrama de constelación para BPSK mostrará dos puntos en un plano, uno para cada posible fase
+            de la portadora. Por ejemplo, un punto en (1,0) podría representar la fase 0° (bit 0), y otro punto en (-
+            1,0) podría representar la fase 180° (bit 1).</p>
+            <div class="image-container">
+              <img src="files/UnidadTres/33.png" alt="Imagen del Capítulo 3">
+            </div>
+            <h2>Ventajas y Desventajas:</h2>
+            <p> Ventajas:
+            </p>
+            <ul class="ul-item">
+              <li>Buen rendimiento en presencia de ruido.</li>
+              <li>Simple de implementar.</li>
+            </ul>
+            <p>  Desventajas:
+            </p>
+            <ul class="ul-item">
+              <li> Puede tener menor eficiencia espectral en comparación con algunas técnicas más 
+                avanzadas.
+              </li>
+            </ul>
+            <p>La elección entre BPSK y otras técnicas depende de los requisitos específicos del sistema, como la 
+              relación señal-ruido (SNR), el ancho de banda disponible y la complejidad del hardware.
+            </p>
+            <h1>MODULACIÓN MPSK</h1>
+            <p>La modulación M-PSK (Modulación de Fase por Desplazamiento de Múltiples Niveles) es una técnica 
+              de modulación de fase que utiliza múltiples niveles de fase para representar datos digitales. En lugar 
+              de tener solo dos fases como en BPSK (Binary Phase Shift Keying), M-PSK utiliza M fases distintas, 
+              donde M es un número entero mayor que 2</p>
+              <div class="image-container">
+                <img src="files/UnidadTres/34.png" alt="Imagen del Capítulo 3">
+              </div>
+            <h2>Forma Matemática de M-PSK:</h2>
+            <p>La señal modulada M-PSK se puede expresar matemáticamente como:</p>
+            <div class="image-container">
+              <img src="files/UnidadTres/60.png" alt="Imagen del Capítulo 3">
+            </div>
+            <p>Donde:</p>
+            <ul class="ul-item">
+              <li>s(t) es la señal modulada.</li>
+              <li>A es la amplitud de la portadora.</li>
+              <li>fc es la frecuencia de la portadora.</li>
+              <li>ϕi es la fase de la i-ésima portadora, donde i puede tomar valores de 0 a M−1</li>
+            </ul>
+            <p>En M-PSK, cada fase diferente representa un símbolo o un conjunto de bits. Por ejemplo, si M=4, 
+              podríamos tener fases de 0∘0∘, 90∘90∘, 180∘180∘, y 270∘270∘, cada una representando un símbolo 
+              distinto.</p>
+            <h1>Diagrama de Constelación M-PSK:
+            </h1>
+            <p>En un diagrama de constelación M-PSK, se representan las diferentes fases en un plano complejo. 
+              Puedes imaginar que cada punto en la constelación representa un símbolo.</p>
+            <h1>Características de M-PSK:</h1>
+            <p>1. Eficiencia Espectral:</p>
+            <ul class="ul-item">
+              <li>M-PSK puede proporcionar una buena eficiencia espectral al utilizar múltiples fases 
+                para representar varios bits por símbolo.</li>
+            </ul>
+            <p>2. Inmunidad al Ruido:
+            </p>
+            <ul class="ul-item">
+              <li>La modulación de fase tiende a ser más resistente al ruido en comparación con la 
+                modulación de amplitud.
+                </li>
+            </ul>
+            <p>3. Diagrama de Constelación:
+            </p>
+            <ul class="ul-item">
+              <li>El diagrama de constelación se complica a medida que aumenta M, pero proporciona 
+                una representación visual de cómo se asignan las diferentes fases a los símbolos.
+                </li>
+            </ul>
+            <p>4. Aplicaciones:
+            </p>
+            <ul class="ul-item">
+              <li>Se utiliza en sistemas de comunicación digital, como comunicaciones por satélite, 
+                sistemas de transmisión de datos y otros entornos donde se requiere una buena 
+                eficiencia espectral y resistencia al ruido.                
+                </li>
+            </ul>
+          <p>La elección de M en M-PSK se realiza considerando los requisitos de rendimiento del sistema y el 
+            entorno de transmisión. Una mayor M permite transmitir más bits por símbolo, pero también puede 
+            hacer que el sistema sea más susceptible al ruido y más complejo de implementar.</p>
+          <p>MPSK es una técnica de modulación multinivel donde la fase de la señal portadora toma N valores 
+            posibles de forma secuencial separados por un ángulo 𝜃 =
+            2𝜋/𝑁
+            . Para el caso de N=4 se tiene 4PSK o QPSK</p>
+            <h1>MODULACIÓN QPSK</h1>
+          <p>En la modulación por desplazamiento de fase en cuadratura se tiene un tren de bits, los cuales se los 
+            divide en pares dándole la denominación de dibits. Cada bit se codifica como un cambio de fase con 
+            respecto al elemento de la señal anterior.
+          </p>
+          <p>La fase de la señal se modula con el objetivo de codificar bits de información digital para cada 
+            cambio de fase.</p>
+          <h1>Forma Matemática de QPSK:</h1>
+          <p>La señal modulada QPSK se puede expresar matemáticamente como:</p>
+          <div class="image-container">
+            <img src="files/UnidadTres/61.png" alt="Imagen del Capítulo 3">
+          </div>
+          <p>donde A es la amplitud de la portadora, fc es la frecuencia de la portadora y ϕi es la fase de la i-ésima 
+            portadora, donde i puede tomar valores de 00 a 33. Cada fase representa dos bits de información</p>
+          <p>La modulación QPSK se basa en cuatro puntos de modulación.</p>
+          <div class="image-container">
+            <img src="files/UnidadTres/35.png" alt="Imagen del Capítulo 3">
+          </div>
+          <p>Estos puntos definen un ángulo de desfase determinado:
+          </p>
+          <ul class="ul-item">
+            <li>Desfase de 45º: Codifica la secuencia digital "00".</li>
+            <li>Desfase de 135º: Codifica la secuencia digital "10"</li>
+            <li>Desfase de 225º: Codifica la secuencia digital "11"</li>
+            <li>Desfase de 315º: Codifica la secuencia digital "01"</li>
+          </ul>
+          <div class="image-container">
+            <img src="files/UnidadTres/36.png" alt="Imagen del Capítulo 3">
+          </div>
+          <p>La modulación QPSK consume una gran cantidad de ancho de banda a costa de una gran robustez 
+            frente a interferencias y ruido. Es la modulación que se utiliza en el servicio de radiodifusión por 
+            satélite.
+          </p>
+          <h1>Características de QPSK:</h1>
+          <p>1. Eficiencia Espectral:</p>
+          <ul class="ul-item">
+            <li>QPSK proporciona una eficiencia espectral mayor que BPSK, ya que transmite dos 
+              bits por símbolo.</li>
+          </ul>
+          <p>2. Inmunidad al Ruido:
+          </p>
+          <ul class="ul-item">
+            <li>La modulación de fase suele ser más resistente al ruido en comparación con la 
+              modulación de amplitud</li>
+          </ul>
+          <p>3. Diagrama de Constelación:
+          </p>
+          <ul class="ul-item">
+            <li>El diagrama de constelación de QPSK muestra cuatro puntos, cada uno representando 
+              una fase diferente.</li>
+          </ul>
+          <p>4. Aplicaciones:
+          </p>
+          <ul class="ul-item">
+            <li>Se utiliza en sistemas de comunicación digital, especialmente en entornos donde se 
+              necesita transmitir datos a altas tasas de bits.</li>
+          </ul>
+          <h2>Ventajas y Desventajas:</h2>
+          <p>Ventajas:
+          </p>
+          <ul class="ul-item">
+            <li>Mayor eficiencia espectral que BPSK.</li>
+            <li>Puede transmitir más información por símbolo</li>
+          </ul>
+          <p>Dentajas:</p>
+          <ul class="ul-item">
+            <li>Puede ser más susceptible a errores en comparación con modulaciones más 
+              complejas como 16-QAM o 64-QAM.</li>
+          </ul>
+          <p>La elección de la modulación QPSK se realiza teniendo en cuenta los requisitos del sistema, la calidad 
+            del canal y la complejidad del hardware. QPSK se utiliza comúnmente en aplicaciones de 
+            comunicación inalámbrica y en sistemas de transmisión de datos de alta velocidad.
+          </p>
+          <h1> MODULACIÓN DPSK</h1>
+          <p>En DPSK (Differential Phase Shift Keying), el desplazamiento de fase se realiza con referencia al bit 
+            anteriormente transmitido.</p>
+          <ul class="ul-item">
+            <li>Binary 0: señal con la misma fase que la anterior</li>
+            <li>Binary 1: señal de fase opuesta a la precedente</li>
+          </ul>
+          <div class="image-container">
+            <img src="files/UnidadTres/37.png" alt="Imagen del Capítulo 3">
+          </div>
+          <div class="image-container">
+            <img src="files/UnidadTres/38.png" alt="Imagen del Capítulo 3">
+          </div>
+          <div class="image-container">
+            <img src="files/UnidadTres/39.png" alt="Imagen del Capítulo 3">
+          </div>
+          <h1>MODULACIÓN OOK- PSK</h1>
+          <p>OOK (On-Off Keying):
+          </p>
+          <ul class="ul-item">
+            <li>OOK modula la amplitud de la portadora, donde la presencia de la portadora representa 
+              un bit 1 y la ausencia representa un bit 0.
+              </li>
+          </ul>
+          <p>PSK (Phase Shift Keying):
+          </p>
+          <ul class="ul-item">
+            <li>PSK modula la fase de la portadora para representar información binaria.
+              </li>
+          </ul>
+          <p>La combinación de estas dos técnicas podría implicar cambiar la amplitud y la fase de la portadora 
+            para transmitir información binaria. Sin embargo, es necesario conocer la especificación exacta de 
+            cómo se implementa OOK-PSK en un sistema particular.
+          </p>
+          <div class="image-container">
+            <img src="files/UnidadTres/62.png" alt="Imagen del Capítulo 3">
+          </div>
+          <h1 id="QAM">QAM (Modulación de amplitud en cuadratura)</h1>
+          <p>La modulación QAM, modulación por amplitud en cuadratura, es una modulación por 
+            desplazamiento de fase y variación de amplitud, permaneciendo la frecuencia constante.
+          </p>
+          <p>Nace de la combinación de las modulaciones ASK y PSK. Si se combinan X variaciones en fase 
+              y Y variaciones en amplitud, se generan X veces Y posibles variaciones de señal
+          </p>
+          <p>La modulación por amplitud en cuadratura es una modulación multinivel, con 4 x n puntos de 
+            modulación, con distintas combinaciones de amplitud y fase.</p>
+
+          <h1>MODULACIÓN 4- QAM</h1>
+          <p>Los canales I y Q se modulan AM a la misma frecuencia, pero desfasados 90 °. Las dos señales se 
+            combinan para formar la señal 4-QAM.</p>
+          <div class="image-container">
+              <img src="files/UnidadTres/41.png" alt="Imagen del Capítulo 3">
+          </div>
+          <div class="image-container">
+            <img src="files/UnidadTres/42.png" alt="Imagen del Capítulo 3">
+          </div>
+          <h1>MODULACIÓN 8- QAM</h1>
+          <ul class="ul-item">
+            <li>La amplitud varía entre dos valores</li>
+            <li>La fase varía entre cuatro valores (8 estados)
+            </li>
+          </ul>
+          <div class="image-container">
+            <img src="files/UnidadTres/43.png" alt="Imagen del Capítulo 3">
+          </div>
+          <p>8QAM-tensiones
+          </p>
+          <div class="image-container">
+            <img src="files/UnidadTres/44.png" alt="Imagen del Capítulo 3">
+          </div>
+          <p>Si entra un tri-bit I, Q, C = 110, según la tabla 8QAM-tensiones:
+          </p>
+          <p>I = 1, C = 0 salida = 0.541</p>
+          <p>Q = 1, C = 0 salida = 0.541</p>
+          <p>Salida del modulador:</p>
+          <p>0.541 𝑐𝑜𝑠 𝑤𝑐
+            𝑡 + 0.541 𝑠𝑖𝑛 𝑤𝑐
+            𝑡 = 0.765 𝑐𝑜𝑠(𝑤𝑐 – 45°) 𝑉𝑜𝑙𝑡𝑠 = 0.765 𝑠𝑖𝑛(𝑤𝑐 + 45°) 𝑉𝑜𝑙𝑡s</p>
+          <p>Si entra I, Q, C = 000 </p>
+          <p>Salida del modulador:</p>
+          <p>−0.541 𝑐𝑜𝑠 𝑤𝑐
+            𝑡 − 0.541 𝑠𝑖𝑛 𝑤𝑐
+            𝑡 = 0.765 𝑐𝑜𝑠(𝑤𝑐 + 45°) 𝑉𝑜𝑙𝑡𝑠 = 0.765 𝑠𝑖𝑛(𝑤𝑐 − 45°) 𝑉𝑜𝑙𝑡s</p>
+
+          <p>Si entra I, Q, C = 001
+          </p>
+          <p>Salida del modulador:</p>
+          <p>−0.541 𝑐𝑜𝑠 𝑤𝑐
+            𝑡 + 0.541 𝑠𝑖𝑛 𝑤𝑐
+            𝑡 = 0.765 𝑐𝑜𝑠(𝑤𝑐 − 45°) 𝑉𝑜𝑙𝑡𝑠 = 0.765 𝑠𝑖𝑛(𝑤𝑐 + 45°) 𝑉𝑜𝑙𝑡s</p>
+          
+          <p>Si entra I, Q, C = 011</p>
+          <p>Salida del modulador:</p>
+          <p>−1.307 𝑐𝑜𝑠 𝑤𝑐
+            𝑡 + 1.307 𝑠𝑖𝑛 𝑤𝑐
+            𝑡 = 1.848 𝑐𝑜𝑠(𝑤𝑐– 135°) 𝑉𝑜𝑙𝑡𝑠 = 1.848 𝑠𝑖𝑛(𝑤𝑐– 45°) 𝑉𝑜𝑙ts</p>
+
+          <p>Si entra I, Q, C = 100</p>
+          <p>Salida del modulador:</p>
+          <p>0.541 𝑐𝑜𝑠 𝑤𝑐
+            𝑡 − 0.541 𝑠𝑖𝑛 𝑤𝑐
+            𝑡 = 0.765 𝑐𝑜𝑠(𝑤𝑐 + 45º) 𝑉𝑜𝑙𝑡𝑠 = 0.765 𝑠𝑖𝑛(𝑤𝑐 + 135º) 𝑉𝑜𝑙ts</p>
+
+          <p>Si entra I, Q, C = 101</p>
+          <p>Salida del modulador:
+          </p>
+          <p>1.307 𝑐𝑜𝑠 𝑤𝑐
+            𝑡 − 1.307 𝑠𝑖𝑛 𝑤𝑐
+            𝑡 = 1.848 𝑐𝑜𝑠(𝑤𝑐 + 45º)𝑉𝑜𝑙𝑡𝑠 = 1.848 𝑠𝑖𝑛(𝑤𝑐 + 135º) 𝑉𝑜𝑙𝑡s</p>
+
+        <p>Si entra I, Q, C = 111</p>
+        <p>Salida del modulador:</p>
+        <p>1.307 𝑐𝑜𝑠 𝑤𝑐
+          𝑡 + 1.307 𝑠𝑖𝑛 𝑤𝑐
+          𝑡 = 1.848 𝑐𝑜𝑠(𝑤𝑐 − 45º) 𝑉𝑜𝑙𝑡𝑠 = 1.848 𝑠𝑖𝑛(𝑤𝑐 + 45º) 𝑉𝑜𝑙𝑡s</p>
+        <p>𝑉8𝑄𝐴𝑀 = 𝑎 𝑐𝑜𝑠 𝑤𝑐
+          𝑡 + 𝑏 𝑠𝑖𝑛 𝑤𝑐
+          t</p>
+        <p>𝑎, 𝑏 = ±0.541, ±1.307</p>
+        <p>𝐵𝑊𝑚í𝑛𝑖𝑚𝑜 = 𝐵𝑊𝑚í𝑛𝑖𝑚𝑜 𝑄𝑃𝑆K</p>
+
+        <div class="image-container">
+          <img src="files/UnidadTres/45.png" alt="Imagen del Capítulo 3">
+        </div>
 
       <h2>Bibliografía</h2>
       <p>F. T. Margarita Cabrera, «Introducción a los sistemas de comunicaciones,» [En línea].
@@ -1875,8 +2729,6 @@
       </p>
       <p>L. W. Couch, Sistemas de comunicacion digitales y analogicos, México: Pearson, 2002</p>
 
-
-      
       <div class="video-container">
         <iframe width="560" height="315" src="https://www.youtube.com/watch?v=5JyXvKYfV38" frameborder="0" allowfullscreen></iframe>
       </div>
