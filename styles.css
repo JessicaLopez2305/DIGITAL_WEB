@@ -743,6 +743,13 @@ li {
   transition: all 0.5s;
 }
 
+.centro-absoluto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 /* media queries */
 
 @media (max-width:991px){
