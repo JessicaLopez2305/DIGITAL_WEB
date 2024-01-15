@@ -1,7 +1,7 @@
 import qrcode
 from PIL import Image
 
-data = "https://twitter.com"
+data = "https://fascinating-tiramisu-4eb469.netlify.app"
 
 qr = qrcode.QRCode(version=1, box_size=10, border=5)
 qr.add_data(data)
